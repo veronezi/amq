@@ -1,1 +1,3 @@
 = ACTIVEMQ
+
+image:https://travis-ci.org/veronezi/amq.svg?branch=master["Build Status", link="https://travis-ci.org/veronezi/amq"]
