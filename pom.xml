@@ -12,7 +12,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <properties>
         <openjdk.version>11.0.1-jre</openjdk.version>
-        <amq.version>5.15.8</amq.version>
+        <amq.version>2.7.0</amq.version>
+        <DOCKERIZE_VERSION>0.0.1-b3</DOCKERIZE_VERSION>
     </properties>
     <repositories>
         <repository>
@@ -71,7 +72,7 @@
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>org.apache.activemq</groupId>
-                                    <artifactId>apache-activemq</artifactId>
+                                    <artifactId>apache-artemis</artifactId>
                                     <version>${amq.version}</version>
                                     <type>tar.gz</type>
                                     <classifier>bin</classifier>

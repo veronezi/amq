@@ -8,4 +8,7 @@ do
 done
 
 echo "All dependencies are online. Starting up this service now."
-/opt/amq/bin/activemq "$@"
+
+./amq/bin/artemis create /opt/broker --user $AMQ_USER --password $AMQ_PASSWORD --require-login
+
+/opt/broker/bin/artemis "$@"
