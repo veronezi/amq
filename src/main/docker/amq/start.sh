@@ -9,6 +9,5 @@ done
 
 echo "All dependencies are online. Starting up this service now."
 
-./amq/bin/artemis create /opt/broker --user $AMQ_USER --password $AMQ_PASSWORD --require-login
-
+./amq/bin/artemis create /opt/broker --user $AMQ_USER --password $AMQ_PASSWORD --require-login --http-host $(hostname -i) --relax-jolokia --data /opt/data
 /opt/broker/bin/artemis "$@"
